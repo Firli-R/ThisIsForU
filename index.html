@@ -1,0 +1,65 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Kesayangan</title>
+    <link rel="stylesheet" href="style.css">
+    <script src="jquery-3.5.1.min.js"></script>
+    <script>
+         $(document).ready(function(){
+            $("#gambar").hide();
+            $("#text1").hide();
+            $("#tanya4").hide();
+            $('#text2').hide();
+            $('#kembali').hide();
+
+            $("#btn1").click(function(){  
+            $("#btn1").fadeOut();
+            }); 
+
+            $("#tanya3").click(function(){
+            $('#gambar').fadeIn(23000);
+            $("#text1").fadeIn(23000);
+            $("#tanya4").fadeIn(40000);
+            $("#pertanyaan").fadeOut(5000);
+            $("#tanya3").fadeOut(5000);
+            $("#text").fadeOut(5000);
+            }); 
+
+            $("#tanya4").click(function(){
+            $("#text1").fadeOut();
+            $('#kembali').fadeIn();
+            $('#tanya4').hide(2000);
+            $('#text2').fadeIn(10000);
+            $('#text2').fadeOut(1000);
+            $("#pertanyaan").fadeIn(30000);
+            $('#pertanyaan').html("aku sayang kamu by");
+            $("#input1").fadeOut(7000);
+            }); 
+            
+        });
+    </script>
+</head>
+<body>
+    <section id = 'container' class="container">
+        <p id="text2">jangan sering nangis dan sedih ya sayang</p>
+        <p id="pertanyaan">Hai kamu yang disana</p>
+        <button class="btn" id="btn1" onclick="hai();">hai</button>
+        <div id="tombol">
+            <div id="text1"><p>selamat ulang tahun ya sayang semoga kamu semakin makin menjadi pribadi yang lebih baik dan lebih kuat tentunya ayo semangat jalanin hidup ini ya apalagi udh aku temenin,semoga juga kamu lebih dewasa dalam mengambil keputusan dan pikirkan juga resiko kedepannya ,lebih bisa menjaga diri kamu dengan baik,semoga makin sayaang sama akuu :),pokoknya semoga semua yang terbaik buat kamu</p></div>
+            <div id="tanya1" style="grid-row: 1;"></div>
+            <div id="tanya4"><button class="btn">lanjut</button></div><br>
+            <p id="text"></p>
+            <div id="gambar"><img src="sayang.jpg" alt="" style="margin:0 auto; max-width: 75%;"></div>
+            <div id="tanya2" style="grid-row: 1;"></div>
+            <div id="tanya3" style="grid-row: 1;"></div>
+            <br>
+            <a href="index.html" id="kembali" class="btn">Kembali</a>
+            
+        </div>
+    </section>
+    <script src="./pilihan.js"></script>
+    <!-- kamu adalah emas dibalik lumpur menurutku ,ayo keluarkan jiwa emas kamu sayang jangan biarkan orang - orang tidak melihat kamu karna lumpur yang menghalagi kamu,kamu bisa bersinar kalo kamu berusaha dengan dengan kuat, jangan pedulikan keadaan,jangan pedulikan mereka yang merendahkanmu ,jangan pedulikan mereka yang tidak mau menemani kamu,jangan merasa rendah intinya semua orang bisa jadi emas dengan caranya masing - masing  -->
+</body>
+</html>
